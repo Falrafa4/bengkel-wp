@@ -1,0 +1,121 @@
+/* STYLE UNTUK HALAMAN HOME */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+/* SLIDESHOW IMAGE*/
+.slideshow {
+    /* transform: translateY(-117px); */
+    position: absolute;
+    z-index: -3;
+    overflow: hidden;
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+}
+.wrapper img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    animation: slide 20s infinite;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    95% {
+        transform: translateX(-300%);
+    }
+}
+
+/* SLIDESHOW IMAGE END */
+
+/* STYLE HEADER */
+header {
+    /* background-image: url(assets/machinev-3.jpg);
+    background-size: cover; */
+    background-color: rgba(0, 0, 0, 0.351);
+    background-blend-mode: darken;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin-top: 20vh;
+    font-size: 80px;
+    line-height: 85px;
+    font-family: "League Spartan", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 6px;
+}
+
+header hr {
+    margin: 40px auto;
+    width: 45%;
+}
+
+.header-nav {
+    margin-top: 50px;
+}
+
+.nav-hubungi, .nav-layanan {
+    transition: all .7s;
+}
+
+.nav-layanan {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+    color: black;
+}
+
+.nav-layanan:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color:white;
+    /* color: #515151; */
+}
+
+.nav-hubungi {
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+.nav-hubungi:hover {
+    background-color: white;
+    color: black
+}
+
+header a {
+    margin: 0 10px;
+    padding: 15px 30px;
+    font-size: 0.9rem;
+    color: white;
+}
+/* STYLE HEADER END */

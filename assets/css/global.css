@@ -1,0 +1,116 @@
+/* STYLE UMUM */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+/* STYLE NAVBAR */
+nav {
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+    height: 10vh;
+    top: 0;
+    position: sticky;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    padding: 20px;
+}
+
+.navbar a:hover {
+    color: #ffffff;
+}
+.active {
+    color: #ffffff;
+}
+
+.navbar a:after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover:after {
+    width: 100%;
+}
+
+ul li a {
+    position: relative;
+    color: #adadad;
+    transition: all .3s;
+    padding: 0 5px;
+}
+
+.logo img {
+    margin-top: 5px;
+    width: 50px;
+}
+/* STYLE NAVBAR END */
+
+/* FOOTER STYLE */
+.footer-top {
+    padding: 50px 0;
+    background-color: #FAF9F6;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-logo {
+    width: 25%;
+    line-height: 30px;
+}
+.footer-top img {
+    width: 80px;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 35px;
+}
+.footer-nav p {
+    font-size: 1.2rem;
+}
+.footer-nav a {
+    color: #666666;
+}
+.footer-nav a:hover {
+    color: black;
+    transition: all .3s;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 3vh;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: #2b2b2b;
+}
+.footer-sosmed a {
+    margin: 0 5px;
+    color: white;
+}
+.fas,.fab {
+    font-size: 25px;
+}
+/* FOOTER STYLE END */

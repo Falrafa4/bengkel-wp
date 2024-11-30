@@ -47,7 +47,7 @@ header a {
 
 /* MAIN STYLE */
 main {
-    background-color: #fff9f2;
+    background-color: #FAF9F6;
     line-height: 30px;
 }
 .pengertian {
@@ -58,6 +58,7 @@ main {
     margin-bottom: 40px;
 }
 
+/* CARD */
 .sejarah {
     text-align: center;
 }
@@ -72,26 +73,47 @@ main {
     font-size: 30px;
 }
 .sejarah-card {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding-bottom: 8rem;
 }
-.card {
+.card-a {
     width: 400px;
-    text-align: center;
 }
+.card-b {
+    width: 600px;
+}
+/* CARD END */
+
+/* OWNER PROFIL */
 .owner {
     background-image: url(../img/owner-2.jpg);
     background-position: center;
-    height: 90vh;
-    position: relative;
+    height: 80vh;
+    color: white;
 }
-.gradient {
+.profile {
+    margin-left: 10vh;
+    width: 700px;
+}
+.profile h1 {
+    font-size: 30px;
+    line-height: 40px;
+}
+.profile hr {
+    width: 55%;
+    margin: 10px 0;
+}
+.owner-gradient {
     width: 80vw;
-    height: 90vh;
+    height: 80vh;
     z-index: 3;
     background-image: linear-gradient(to right, rgb(0, 0, 0) , rgba(0, 0, 0, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+/* OWNER PROFIL END */
 /* MAIN STYLE END */

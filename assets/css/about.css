@@ -69,8 +69,7 @@ main {
 }
 .sejarah h1 {
     font-family: 'League Spartan';
-    text-transform: uppercase;
-    font-size: 30px;
+    font-size: 35px;
 }
 .sejarah-card {
     margin-top: 30px;
@@ -114,6 +113,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+cite {
+    display: block;
+    line-height: 25px;
 }
 /* OWNER PROFIL END */
 /* MAIN STYLE END */

@@ -7,9 +7,8 @@ body {
 
 /* SLIDESHOW IMAGE*/
 .slideshow {
-    /* transform: translateY(-117px); */
     position: absolute;
-    z-index: -3;
+    z-index: -99;
     overflow: hidden;
 }
 .wrapper {
@@ -17,9 +16,10 @@ body {
     display: flex;
 }
 .wrapper img {
-    width: 100vw;
-    height: 100vh;
+    z-index: -99;
+    width: 100%;
     object-fit: cover;
+    display: block;
     animation: slide 20s infinite;
 }
 @keyframes slide {
@@ -53,9 +53,7 @@ body {
 
 /* STYLE HEADER */
 header {
-    /* background-image: url(assets/machinev-3.jpg);
-    background-size: cover; */
-    background-color: rgba(0, 0, 0, 0.351);
+    background-color: rgba(0, 0, 0, 0.129);
     background-blend-mode: darken;
     height: 100vh;
     display: flex;
@@ -66,7 +64,7 @@ header {
 
 header h1 {
     margin-top: 20vh;
-    font-size: 80px;
+    font-size: 85px;
     line-height: 85px;
     font-family: "League Spartan", serif;
     font-optical-sizing: auto;
@@ -75,6 +73,9 @@ header h1 {
     letter-spacing: 6px;
 }
 
+header p{
+    font-size: 20px;
+}
 header hr {
     margin: 40px auto;
     width: 45%;
@@ -103,6 +104,7 @@ header hr {
 }
 
 .nav-hubungi {
+    background-color: #ffffff10;
     border: 1px solid white;
     border-radius: 100px;
 }
@@ -119,3 +121,74 @@ header a {
     color: white;
 }
 /* STYLE HEADER END */
+
+/* KEUNGGULAN STYLE */
+main h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "League Spartan";
+    font-size: 40px;
+}
+.unggul {
+    padding: 15vh 0;
+}
+.unggul h3{
+    font-size: 20px;
+}
+.unggul-card {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.card {
+    width: 25vw;
+    padding: 50px 30px;
+    border: 1px solid #2b2b2b;
+    cursor: default;
+    border-radius: 6px;
+    transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.card:hover {
+    transform: scale(1.1);
+}
+/* KEUNGGULAN STYLE END */
+
+/* QUOTE STYLE */
+.quote {
+    background-color: #2b2b2b;
+    background-blend-mode: multiply;
+    background-image: url(assets/img/milling-machine.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.quote-fill {
+    width: 700px;
+    text-align: center;
+}
+
+/* RESPONSIVE STYLE */
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        width: 100%;
+        height: 100vh;
+    }
+    .wrapper img {
+        z-index: -99;
+        width: 100%;
+        height: 100%;
+    }
+    header h1 {
+        font-size: 70px;
+        line-height: 75px;
+    }
+}

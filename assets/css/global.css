@@ -13,6 +13,21 @@ a {
     text-decoration: none;
 }
 
+h1,h3,p,strong,cite,hr,main img,header a, main a{
+    animation: coolTransition 0.9s;
+}
+@keyframes coolTransition {
+    from {
+        opacity: 0;
+        transform: translateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* STYLE NAVBAR */
 nav {
     background-color: #2b2b2b;

@@ -12,7 +12,15 @@
 a {
     text-decoration: none;
 }
+/* Header FOnt */
+header h1 {
+    font-size: 85px;
+}
+header p{
+    font-size: 20px;
+}
 
+/* Animation Transition On Load Page */
 h1,h3,p,strong,cite,hr,main img,header a, main a{
     animation: coolTransition 0.9s;
 }

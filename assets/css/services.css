@@ -75,6 +75,9 @@ header a {
 }
 
 /* MAIN STYLE */
+.main-desc {
+    text-align: center;
+}
 main h1 {
     padding-top: 50px;
     text-align: center;
@@ -111,19 +114,21 @@ main hr {
 .layanan {
     display: flex;
     align-items: center;
-    padding: 100px 100px;
+    padding: 10vh 10%;
     gap: 30px;
     line-height: 25px;
 }
-.layanan:nth-child(even){ /*GENAP*/
+.layanan:nth-child(odd){ /*GENAP*/
     background-color: #2b2b2b;
     color: #ffffff;
     flex-direction: row-reverse;
     text-align: right;
+    box-shadow: 0px 1px 49px 5px rgba(0,0,0,0.3);
 }
 .layanan img {
-    max-width: 600px;
-    height: auto;
+    width: 30vw;
+    height: 35vh;
+    object-fit: cover;
     border-radius: 10px;
 }
 .layanan p, .layanan h2 {
@@ -138,8 +143,10 @@ main hr {
     width: 500px;
     margin: 20px auto 40px auto;
     text-align: center;
-    border: 1px solid black;
     border-radius: 5px;
     padding: 40px;
+    background-color: #f0f0f0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 /* MAIN STYLE END */
+

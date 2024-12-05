@@ -7,7 +7,7 @@ body {
 
 /* STYLE HEADER */
 header {
-    background-image: url(../img/machinev-3.jpg);
+    background-image: url(../img/milling-machine.jpg);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.481);
     background-blend-mode: darken;
@@ -80,6 +80,18 @@ main {
 }
 .card-a {
     width: 400px;
+}
+.card-a .fas, .card-b .fas {
+    font-size: 30px;
+    color: white;
+    background-color: #2b2b2b;
+    border-radius: 40px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
 }
 .card-b {
     width: 600px;

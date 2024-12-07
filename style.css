@@ -19,7 +19,6 @@ body {
     z-index: -99;
     width: 100%;
     object-fit: cover;
-    display: block;
     animation: slide 20s infinite;
 }
 @keyframes slide {
@@ -122,6 +121,27 @@ header a {
 }
 /* STYLE HEADER END */
 
+/* HAMBURGER NAV STYLE */
+#toggleSideBar {
+    display: none;
+}
+.ham-bar {
+    display: none;
+    position: fixed;
+    top: 7%;
+    z-index: -1;
+    background-color: #2b2b2b;
+    width: 100%;
+    left: 0;
+}
+.ham-bar a {
+    display: block;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+}
+
 /* KEUNGGULAN STYLE */
 main h1 {
     text-align: center;
@@ -180,7 +200,7 @@ main h1 {
 /* RESPONSIVE STYLE
     SECARA KESELURUHAN MASIH BELUM
 */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .wrapper {
         width: 100%;
         height: 100vh;
@@ -193,5 +213,12 @@ main h1 {
     header h1 {
         font-size: 70px;
         line-height: 75px;
+    }
+    .card {
+        width: 90%;
+    }
+
+    .quote-fill {
+        width: 90%;
     }
 }

@@ -9,21 +9,33 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
+
 /* Header FOnt */
 header h1 {
     font-size: 85px;
 }
-header p{
+
+header p {
     font-size: 20px;
 }
 
 /* Animation Transition On Load Page */
-h1,h3,p,strong,cite,hr,main img,header a, main a{
+h1,
+h3,
+p,
+strong,
+cite,
+hr,
+main img,
+header a,
+main a {
     animation: coolTransition 0.9s;
 }
+
 @keyframes coolTransition {
     from {
         opacity: 0;
@@ -61,6 +73,7 @@ ul li {
 .navbar a:hover {
     color: #ffffff;
 }
+
 .active {
     color: #ffffff;
 }
@@ -91,10 +104,43 @@ ul li a {
     margin-top: 5px;
     width: 50px;
 }
+
 /* STYLE NAVBAR END */
+
+/* HAMBURGER MENU STYLE */
+#toggleSideBar {
+    display: none;
+}
+
+.ham-bar {
+    display: none;
+    position: fixed;
+    padding: 20px 0;
+    top: 8%;
+    z-index: -1;
+    background-color: #2b2b2b;
+    width: 100%;
+    left: 0;
+    transition: all 300ms cubic-bezier(0, 0.085, 0.68, 0.53);
+}
+
+.ham-bar .active {
+    color: #ffffff;
+}
+
+.ham-bar a {
+    display: block;
+    color: #adadad;
+    font-size: 24px;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
+}
+
 main {
     background-color: #FAF9F6;
 }
+
 /* FOOTER STYLE */
 .footer-top {
     padding: 50px 0;
@@ -102,24 +148,30 @@ main {
     display: flex;
     justify-content: space-evenly;
 }
+
 .footer-logo {
     width: 25%;
     line-height: 30px;
 }
+
 .footer-top img {
     width: 80px;
 }
+
 .footer-nav {
     display: flex;
     flex-direction: column;
     line-height: 35px;
 }
+
 .footer-nav p {
     font-size: 1.2rem;
 }
+
 .footer-nav a {
     color: #666666;
 }
+
 .footer-nav a:hover {
     color: black;
     transition: all .3s;
@@ -133,11 +185,37 @@ main {
     color: white;
     background-color: #2b2b2b;
 }
+
 .footer-sosmed a {
     margin: 0 5px;
     color: white;
 }
-.fas,.fab {
+
+.fas,
+.fab {
     font-size: 25px;
 }
+
 /* FOOTER STYLE END */
+
+@media only screen and (max-width: 768px) {
+    nav {
+        height: 100px;
+        border: 1px solid red;
+        padding: 0 30px;
+    }
+
+    #toggleSideBar {
+        display: block;
+        color: white;
+    }
+
+    #toggleSideBar i {
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+    }
+}

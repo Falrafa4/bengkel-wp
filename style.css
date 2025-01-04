@@ -11,38 +11,48 @@ body {
     z-index: -99;
     overflow: hidden;
 }
+
 .wrapper {
     width: 100%;
     display: flex;
 }
+
 .wrapper img {
     z-index: -99;
     width: 100%;
     object-fit: cover;
     animation: slide 20s infinite;
 }
+
 @keyframes slide {
     0% {
         transform: translateX(0);
     }
+
     20% {
         transform: translateX(0);
     }
+
     25% {
         transform: translateX(-100%);
     }
+
     45% {
         transform: translateX(-100%);
     }
+
     50% {
         transform: translateX(-200%);
     }
+
     70% {
         transform: translateX(-200%);
     }
+
     75% {
         transform: translateX(-300%);
     }
+
     95% {
         transform: translateX(-300%);
     }
@@ -72,9 +82,10 @@ header h1 {
     letter-spacing: 6px;
 }
 
-header p{
+header p {
     font-size: 20px;
 }
+
 header hr {
     margin: 40px auto;
     width: 45%;
@@ -84,7 +95,8 @@ header hr {
     margin-top: 50px;
 }
 
-.nav-hubungi, .nav-layanan {
+.nav-hubungi,
+.nav-layanan {
     transition: all .7s;
 }
 
@@ -98,7 +110,7 @@ header hr {
 .nav-layanan:hover {
     background-color: transparent;
     border: 1px solid white;
-    color:white;
+    color: white;
     /* color: #515151; */
 }
 
@@ -119,12 +131,14 @@ header a {
     font-size: 0.9rem;
     color: white;
 }
+
 /* STYLE HEADER END */
 
 /* HAMBURGER NAV STYLE */
 #toggleSideBar {
     display: none;
 }
+
 .ham-bar {
     display: none;
     position: fixed;
@@ -134,6 +148,7 @@ header a {
     width: 100%;
     left: 0;
 }
+
 .ham-bar a {
     display: block;
     color: white;
@@ -149,12 +164,15 @@ main h1 {
     font-family: "League Spartan";
     font-size: 40px;
 }
+
 .unggul {
     padding: 15vh 0;
 }
-.unggul h3{
+
+.unggul h3 {
     font-size: 20px;
 }
+
 .unggul-card {
     display: flex;
     text-align: center;
@@ -162,18 +180,21 @@ main h1 {
     gap: 30px;
     flex-wrap: wrap;
 }
+
 .card {
     width: 400px;
     padding: 50px 30px;
-    background-color: #f0f0f0;
+    background-color: #fffbf6;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     cursor: default;
     border-radius: 6px;
     transition: .4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
 .card:hover {
     transform: scale(1.1);
 }
+
 /* KEUNGGULAN STYLE END */
 
 /* QUOTE STYLE */
@@ -192,6 +213,7 @@ main h1 {
     align-items: center;
     font-size: 1.3rem;
 }
+
 .quote-fill {
     width: 700px;
     text-align: center;
@@ -205,20 +227,35 @@ main h1 {
         width: 100%;
         height: 100vh;
     }
+
     .wrapper img {
         z-index: -99;
         width: 100%;
         height: 100%;
     }
+
     header h1 {
         font-size: 70px;
         line-height: 75px;
     }
+
+    header p {
+        margin: 5px 20px;
+    }
+
     .card {
         width: 90%;
     }
 
+    .quote {
+        font-size: 18px;
+    }
+
+    .quote p {
+        margin: 5px;
+    }
+
     .quote-fill {
-        width: 90%;
+        width: 100%;
     }
 }

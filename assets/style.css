@@ -201,7 +201,7 @@ main h1 {
 .quote {
     background-color: #2b2b2b;
     background-blend-mode: multiply;
-    background-image: url(assets/img/milling-machine.jpg);
+    background-image: url(img/milling-machine.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

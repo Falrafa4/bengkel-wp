@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/daftar.css">
+    <link rel="shortcut icon" href="../assets/img/logo-wp-circle.png">
+    <title>Daftar - Bengkel Wahyu Putra</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="../assets/img/logo-wp-circle.png" alt="logo"></a>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="../">Home</a></li>
+                <li><a href="../services/">Services</a></li>
+                <li><a href="../wip.html">Gallery</a></li>
+                <li><a href="../contact/">Contact</a></li>
+                <li><a href="../about/">About</a></li>
+                <li><a href="../login/" class="active">Login</a></li>
+            </ul>
+        </div>
+        <!-- sidebar -->
+        <a id="toggleSideBar" onclick="toggleClick()"><i class="fas fa-bars"></i></a>
+        <div class="ham-bar">
+                <a href="../">Home</a>
+                <a href="../services/">Services</a>
+                <a href="../wip.html">Gallery</a>
+                <a href="../contact/">Contact</a>
+                <a href="../about/">About</a>
+                <a href="../login/">Login</a>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <main>
+        <form action="daftar.php" method="post">
+            <h2>Daftar Akun</h2>
+            <p>Silahkan daftar akun Bengkel Wahyu Putra Anda</p>
+            <input type="text" name="nama" id="nama" placeholder="Nama Lengkap" required><br>
+            
+            <label for="jkel" class="label">Jenis Kelamin: </label>
+            <select name="jkel" id="jkel">
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select>
+            
+            <label for="date" class="label">Tanggal Lahir: </label>
+            <input type="date" name="tgl_lahir" id="tgl_lahir" placeholder="Tanggal Lahir" required><br>
+            
+            <input type="tel" name="telp" id="telp" placeholder="Nomor Telepon" required>
+            
+            <label for="jenis_akun" class="label">Jenis Akun: </label>
+            <select name="jenis_akun" id="jenis_akun">
+                <option value="Pribadi">Pribadi</option>
+                <option value="Perusahaan">Perusahaan</option>
+            </select>
+
+            <input type="text" name="username" id="username" placeholder="Buat Username" required>
+            <br>
+
+            <input type="password" name="password" id="password" placeholder="Buat Password" required><br>
+            <input type="password" name="ulangi_pass" id="ulangi_pass" placeholder="Ulangi Password" required><br>
+
+            <p>Sudah punya akun? <a href="../login/">Login di sini!</a></p>
+
+            <button type="submit" name="daftar">Daftar</button>
+        </form>
+    </main><hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <section class="footer-top">
+            <div class="footer-logo">
+                <img src="../assets/img/logo-wp-circle.png" alt="">
+                <p>Bengkel Wahyu Putra</p>
+                <p>Jl. Tropodo I Surya Citra Residence Blok J No.3 Waru - Sidoarjo 61256</p>
+            </div>
+            <div class="footer-nav">
+                <p>Lihat Juga</p>
+                <a href="services/">Layanan Kami</a>
+                <a href="#">Tentang Kami</a>
+                <a href="wip.html">Galeri Kerja</a>
+                <a href="wip.html">Informasi Lowongan</a>
+            </div>
+        </section>
+        <section class="footer-bottom">
+            <p>&copy; 2024 Bengkel Wahyu Putra. All Rights Reserved</p>
+            <div class="footer-sosmed">
+                <a href="mailto:jasabengkelwahyuputra@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="http://wa.me/6281216977427"><i class="fab fa-square-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-square-facebook"></i></a>
+                <a href="#"><i class="fab fa-square-instagram"></i></a>
+            </div>
+        </section>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="https://kit.fontawesome.com/ed13b1bb03.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
